@@ -1,0 +1,35 @@
+body {
+    background-color: darkkhaki;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+p {
+    font-size: 20px;
+    color:olive;
+    background-color:rgb(140, 250, 23);
+    padding:10px;
+    margin: 30px;
+}
+
+.special {
+    border: 6px ridge olivedrab;
+    padding: 30px;
+    background-color: rgb(232, 232, 212);
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.highlight {
+    border: 5px dashed yellow;
+    padding: 10px;
+}
