@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background:#b79274;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: "pf-pixelscript", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2 {
+    font-family: "pf-pixelscript", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+}
+
+h3 {
+    font-family: "palatino", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+}
+
+p {
+    font-family: "palatino", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.whitebox {
+    background:#ffffff;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+
+.whitebox-3 {
+background:#ffffff;
+width: 70%;
+max-width: 800px;
+margin-top: 30px;
+margin-bottom: 30px;
+margin-left: auto;
+margin-right: auto;
+padding: 15px;
+}
+
+.whitebox-2 {
+background:#ffffff;
+width: 95%;
+margin-top: 2.5%;
+margin-bottom: 2.5%;
+margin-left: auto;
+margin-right: auto;
+padding: 15px;
+border: 6px double #b79274;
+}
+
+
+.relative {
+    position: relative;
+  }
