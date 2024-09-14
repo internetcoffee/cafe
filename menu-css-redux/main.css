@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("cafe-dither.png");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: "pf-pixelscript", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2 {
+    font-family: "pf-pixelscript", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+}
+
+h3 {
+    font-family: "palatino", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+}
+
+p {
+    font-family: "palatino", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.whitebox {
+    background:#ffffff;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+
+.whitebox-3 {
+background:#ffffff;
+width: 70%;
+max-width: 800px;
+margin-top: 30px;
+margin-bottom: 30px;
+margin-left: auto;
+margin-right: auto;
+padding: 15px;
+}
+
+.whitebox-2 {
+background:#ffffff;
+width: 95%;
+margin-top: 2.5%;
+margin-bottom: 2.5%;
+margin-left: auto;
+margin-right: auto;
+padding: 15px;
+border: 6px double #b79274;
+}
+
+
+.relative {
+position: relative;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 60px;
+width: 90%;
+/* max-width: 1400px; */
+padding: 40px 0 40px 0;
+margin: 0 auto;
+align-items: top;
+}
+
+.grid-item {
+    /* overflow: hidden; */
+    min-width: 150px;
+    position:relative;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    padding: 13px;
+    position: absolute;
+    left:0;
+    top:100%;
+    z-index: 1;
+    display: inline-block;
+  }
+  
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+  }
