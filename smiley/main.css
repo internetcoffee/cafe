@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background:darkslateblue;
+}
+
+img {
+    max-width: 100%;
+}
+
+.smiley{
+    background: lightslategray;
+    width: 200px;
+    height: 200px;
+    margin: 150px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.eye {
+    background: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+}
+
+.left {
+    left: 20%;
+}
+
+.right {
+    right:20%; 
+}
+
+.mouth {
+    position: absolute;
+    background: black;
+    width: 120px;
+    height: 35px;
+    border-radius: 0 0 100% 100%;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottomtext {
+    color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+}
