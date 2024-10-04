@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background:#1a1a1a;
+    display: flex;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --animation-time: 6s;
+}
+
+.mover {
+    position: fixed;
+    width: 100px;
+    transition-property: all;
+    /* animation: lrud var(--animation-time) linear alternate infinite; */
+}
+
+@keyframes lrud {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    100% {
+        left: 100vw;
+        top: 100vh;
+    }
+}
+
+#rand {
+    top: 0;
+    /* animation-name: lrud;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite; */
+}

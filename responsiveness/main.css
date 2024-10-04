@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(206, 154, 102);
+    transition: background .7s, font-size .7s;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header, footer, .left, .right, .center, .mobile-banner {
+    border: 1px solid;
+    padding: 20px;
+    transition: background .5s;
+}
+
+header, footer {
+    text-align: center;
+}
+
+main{
+    display: flex; 
+    gap: 10px;
+}
+
+.left, .right {
+    width: 25%;
+}
+
+.center {
+    width: 50%;
+}
+
+.left {
+    transition: background .5s;
+}
+
+.mobile-banner {
+    /* margin-top: 10px; */
+    text-align: center;
+    display: none;
+}
+
+.left:hover, .right:hover, .center:hover, header:hover, footer:hover, .mobile-banner:hover {
+    background: khaki;
+}
+
+/* max-width = desktop first design */
+/* min-width = mobile first design */
+
+@media screen and (max-width:900px) {
+    body{
+        background-color: darkkhaki;
+    }
+    
+    main {
+        flex-wrap: wrap;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .center, .right {
+        width: calc(50% - 5px);
+    }
+}
+
+/* phone styles */
+
+@media screen and (max-width: 600px){
+    body{
+        background-color: lightslategray;
+        font-size: 140%;
+    }
+
+    .center, .right {
+        width: 100%;
+    }
+
+    .mobile-banner {
+        display: block;
+    }
+}

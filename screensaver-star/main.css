@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background:#090909;
+    display: flex;
+    margin: 0;
+}
+
+/* img {
+    max-width: 100%;
+} */
+
+#container {
+    position: relative;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.mover {
+    position: fixed;
+    width: 100px;
+    /* animation: lrud var(--animation-time) linear alternate infinite; */
+}
+
+@keyframes lrud {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    100% {
+        left: 100vw;
+        top: 100vh;
+    }
+}
+
+#rand {
+    top: 0;
+    left: 0;
+    transition: left 5s linear, top 3s linear;
+    /* animation-name: lrud;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite; */
+}
+
+.trail {
+    position: absolute;
+    width: 50px; /* Same size as the image */
+    opacity: 1;
+    transition: opacity 1s ease-out; /* Fade out effect */
+    pointer-events: none; /* Prevent interaction */
+    transform: translate(50%, 50%);
+}
