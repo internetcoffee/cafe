@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background:#b79274;
+    /* font-family: "Syne", sans-serif; */
+    font-family: fantasy;
+}
+
+img {
+    max-width: 100%;
+}

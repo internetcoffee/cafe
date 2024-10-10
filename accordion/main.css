@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: rgb(245, 242, 225);
+    transition: background 1s;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    position: absolute;
+    width: 315px;
+    height: 315px;
+    background: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 15px antiquewhite solid;
+}
+
+.grad1 {
+    position: absolute;
+    background-image: linear-gradient(red, yellow);
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s;
+    z-index: 6;
+}
+
+.grad2 {
+    position: absolute;
+    background-image: linear-gradient(orange, green);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    transition: opacity 1s;
+}
+
+.grad3 {
+    position: absolute;
+    background-image: linear-gradient(yellow, blue);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    transition: opacity 1s;
+}
+
+.grad4 {
+    position: absolute;
+    background-image: linear-gradient(green, purple);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transition: opacity 1s;
+}
+
+.grad5 {
+    position: absolute;
+    background-image: linear-gradient(blue, red);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: opacity 1s;
+}
+
+.grad6 {
+    position: absolute;
+    background-image: linear-gradient(purple, orange);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+@media screen and (max-width:1613px) {
+    .grad1 {
+        opacity: 0;
+    }
+    body {
+        background: rgb(178, 174, 152);
+    }
+}
+
+@media screen and (max-width:1434px) {
+    .grad2 {
+        opacity: 0;
+    }
+    body {
+        background: rgb(113, 110, 95);
+    }
+}
+
+@media screen and (max-width:1254px) {
+    .grad3 {
+        opacity: 0;
+    }
+    body {
+        background: rgb(55, 53, 44);
+    }
+}
+
+@media screen and (max-width:1075px) {
+    .grad4 {
+        opacity: 0;
+    }
+    body {
+        background: rgb(113, 110, 95);
+    }
+}
+
+@media screen and (max-width:896px) {
+    .grad5 {
+        opacity: 0;
+    }
+    body {
+        background: rgb(245, 242, 225);
+    }
+}
