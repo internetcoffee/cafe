@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background:#b79274;
+    transition: background .25s;
+}
+
+body.dark {
+    background:#91745c;
+}
+
+img {
+    max-width: 100%;
+}
+
+.menu {
+    background: ivory;
+    position: fixed;
+    right: -200px;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    transition: right .25s, background .5s;
+}
+
+.menu.active {
+    right: 0;
+  }
+
+.menu.glow {
+    background: lightgoldenrodyellow;
+}
+
+  .gear {
+    background: ivory;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    margin: 30px;
+    opacity: 0;
+    transition: transform .5s, opacity .5s, background .5s;
+  }
+
+.gear.spin {
+    transform: rotate(90deg);
+    opacity: 1;
+  }
+
+  .gear.glow {
+    background: lightcoral;
+  }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>BOP IT!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <button id="playn" class="normal">play</button>
+    <button id="playh" class="hard">hard mode</button>
+
+    <div class="circlecontainer">
+        <div id="myC1" class="circle"></div>
+        <div id="myC2" class="circle"></div>
+        <div id="myC3" class="circle"></div>
+    </div>
+
+    <div class="bopcontainer">
+        <img src="boptoy.png">
+        <p id="score" class="score">score: 0</p>
+    </div>
+
+    <div class="audiocontainer">
+        <audio id="aud1" loop preload="auto">
+            <source src="normal-mode.wav" type="audio/wav"> 
+            <!-- 130 bpm, 1 bar is 1.8462 seconds -->
+        </audio>
+        <audio id="boss" loop preload="auto">
+            <source src="boss_mode.wav" type="audio/wav"> 
+            <!-- 145 bpm, 1 bar is 1666.72 ms -->
+        </audio>
+        <audio id="bopsound" preload="auto">
+            <source src="bop-it.m4a">
+        </audio>
+        <audio id="twistsound" preload="auto">
+            <source src="twist-it.m4a">
+        </audio>
+        <audio id="pullsound" preload="auto">
+            <source src="pull-it.m4a">
+                    <audio id="pullsound" preload="auto">
+            <source src="pull-it.m4a">
+        </audio>
+        <audio id="tooslow" preload="auto">
+            <source src="tooslow.mp3">
+        </audio>
+        <audio id="bopfx" preload="auto">
+            <source src="bopfx.mp3">
+        </audio>
+        <audio id="twistfx" preload="auto">
+            <source src="twistfx.mp3">
+        </audio>
+        <audio id="pullfx" preload="auto">
+            <source src="pullfx.mp3">
+        </audio>
+    </div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
