@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #F9F9F9;
+  
+  /* sets repeating svg background */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Ccircle cx='5' cy='5' r='1' fill='black'/%3E%3C/svg%3E");
+  background-size: 40px 40px;
+  background-repeat: repeat;
+  cursor: grab;
+}
+
+body:active {
+  cursor: grabbing;
+}
+
+img {
+    max-width: 100%;
+    cursor: default;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 375px;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.05);
+  cursor: default;
+}
+
+/* takes up 6 BOXES / 7 DOTS */
+.six-box { 
+  position: absolute;
+
+  /* 40 * number of boxes, and then tweak */
+  width: 244px;
+  height: 244px;
+}
+
+#zombie {
+  top: 208px;
+  left: 488px;
+}
