@@ -7,8 +7,9 @@ let startX, startY;
 // Variables to track the background's position
 let bgPosX = 0, bgPosY = 0;
 
-// Set draggable image class
+// Grab classes from CSS
 const images = document.querySelectorAll(".draggable");
+const noDrag = document.querySelector(".no-drag");
 
 // Store all image positions
 const imagePositions = new Map();
@@ -27,6 +28,7 @@ images.forEach(img => {
 
 // Event listener for when the user clicks (starts dragging)
 document.addEventListener("mousedown", (e) => {
+  if (noDrag.contains(e.target)) return;
   isDragging = true; // Set dragging flag to true
   startX = e.clientX; // Store the initial X position of the cursor
   startY = e.clientY; // Store the initial Y position of the cursor
@@ -68,4 +70,44 @@ document.addEventListener("mousemove", (e) => {
 // Event listener for when the user releases the mouse (stops dragging)
 document.addEventListener("mouseup", () => {
   isDragging = false; // Reset dragging flag
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const pageBg = document.querySelector(".page-bg");
+  const xButton = document.querySelector(".x-button");
+  const hoverItems = document.querySelectorAll(".hover-color");
+
+  let activeSection = null;
+
+  hoverItems.forEach(item => {
+    item.addEventListener("click", () => {
+      const targetId = item.getAttribute("data-target");
+      const targetSection = document.getElementById(targetId);
+
+      if (!targetSection) return;
+
+      // 🔁 If a section is already open and it's not the same one, close it
+      if (activeSection && activeSection !== targetSection) {
+        activeSection.classList.remove("visible");
+      }
+
+      // ✅ Show the clicked section
+      targetSection.classList.add("visible");
+      activeSection = targetSection;
+
+      pageBg.classList.add("visible");
+      xButton.classList.add("visible");
+    });
+  });
+
+  xButton.addEventListener("click", () => {
+    pageBg.classList.remove("visible");
+    xButton.classList.remove("visible");
+
+    if (activeSection) {
+      activeSection.classList.remove("visible");
+      activeSection = null;
+    }
+  });
 });
